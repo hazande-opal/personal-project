@@ -7,14 +7,11 @@ const popUp = document.querySelector('.js-popup');
 const usersData = JSON.parse(localStorage.getItem('userdata')) || [{}];
 
 submitButton.addEventListener('click', () => {
+    
     const userNameValue = userName.value;
     const userPasswordValue = userPassword.value;
     const userEmailValue = userEmail.value;
 
-    
-
-
-   
 
     if(userNameValue === '' || userPasswordValue === '' || userEmailValue === ''){
         console.log('null')
@@ -29,11 +26,9 @@ submitButton.addEventListener('click', () => {
         setTimeout(() => {
             popUp.style.display = 'flex';
         }, 1000)
-        
+
         setTimeout(() => {
             
-           
-
             userName.value = '';
             userPassword.value = '';
             userEmail.value = '';
@@ -45,10 +40,6 @@ submitButton.addEventListener('click', () => {
     }
 
     localStorage.setItem('userdata', JSON.stringify(usersData));
-
-    console.log(usersData)
-
-
 })
 
 
