@@ -10,7 +10,7 @@ submitButton.addEventListener('click', () => {
     const userPasswordValue = userPassword.value;
     const userEmailValue = userEmail.value;
 
-    console.log(userNameValue, userPasswordValue, userEmailValue);
+    
     userName.value = '';
     userPassword.value = '';
     userEmail.value = '';
@@ -21,6 +21,5 @@ submitButton.addEventListener('click', () => {
         email: userEmailValue
     })
 
-    console.log(usersData);
 
 })
