@@ -1,0 +1,12 @@
+.username-input:focus~.username-label, .username-input:valid~.username-label, 
+.password-input:focus~.password-label, .password-input:valid~.password-label,
+.email-input:focus~.email-label, .email-input:valid~.email-label{
+    scale: 0.8;
+    transform: translateY(-26px);
+    line-height: 1;
+    color: #1e40af;
+    background-color: white;
+    transition:;
+}
+
+
