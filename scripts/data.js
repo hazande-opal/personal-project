@@ -15,6 +15,11 @@ submitButton.addEventListener('click', () => {
 
     if(userNameValue === '' || userPasswordValue === '' || userEmailValue === ''){
         console.log('null')
+
+        // let matchingItem;
+        // usersData.forEach((data) => {
+            
+        // })
     }
     else{
         usersData.push({
